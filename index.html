@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ – Tutorialspointbd | Learn Programming & Web Development</title>
+  <meta name="description" content="Find answers to the most common questions about Tutorialspointbd courses, tutorials, and video learning. Explore detailed explanations and video guides." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="FAQ – Tutorialspointbd" />
+  <meta property="og:description" content="Find answers to the most common questions about Tutorialspointbd courses, tutorials, and video learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tutorialspointbd.com/faq" />
+  <!-- FAQPage JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is Tutorialspointbd?","acceptedAnswer":{"@type":"Answer","text":"Tutorialspointbd is a Bangladeshi online learning platform offering free and premium programming, web development, and technology tutorials in both Bengali and English."}},
+      {"@type":"Question","name":"Are the courses free to access?","acceptedAnswer":{"@type":"Answer","text":"Many of our courses are completely free. Some advanced courses require a one-time enrollment fee. All free content is accessible without registration."}},
+      {"@type":"Question","name":"Do I get a certificate after completing a course?","acceptedAnswer":{"@type":"Answer","text":"Yes! Upon completing a paid course, you receive a digital certificate of completion that you can download and share on LinkedIn or your portfolio."}},
+      {"@type":"Question","name":"What programming languages are covered?","acceptedAnswer":{"@type":"Answer","text":"We cover HTML, CSS, JavaScript, Python, PHP, Laravel, React, Vue.js, Node.js, and more — all the way from beginner to advanced level."}},
+      {"@type":"Question","name":"Can I learn at my own pace?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All video lessons are pre-recorded and available 24/7, so you can learn on your own schedule — no deadlines, no pressure."}},
+      {"@type":"Question","name":"How do I reset my password?","acceptedAnswer":{"@type":"Answer","text":"Go to the login page, click 'Forgot Password', enter your registered email, and follow the reset link sent to your inbox. It expires in 30 minutes."}},
+      {"@type":"Question","name":"Is there a mobile app available?","acceptedAnswer":{"@type":"Answer","text":"Our website is fully mobile-responsive and works great on all devices. A dedicated Android app is currently in development and will launch soon."}}
+    ]
+  }
+  </script>
+  <style>
+    /* ── Reset & Base ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary:   #2563EB;
+      --secondary: #0EA5E9;
+      --bg:        #F8FAFC;
+      --surface:   #FFFFFF;
+      --text:      #0F172A;
+      --muted:     #64748B;
+      --border:    #E2E8F0;
+      --hover-bg:  #EFF6FF;
+      --highlight: #DBEAFE;
+      --radius:    14px;
+      --shadow-sm: 0 1px 3px rgba(15,23,42,.07), 0 1px 2px rgba(15,23,42,.05);
+      --shadow-md: 0 4px 16px rgba(15,23,42,.10), 0 2px 6px rgba(15,23,42,.06);
+      --transition: 240ms cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    /* ── Scrollbar ────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+    /* ── Layout ──────────────────────────────────────── */
+    .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+    /* ── Header / Nav ────────────────────────────────── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(248,250,252,.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.05rem; font-weight: 700; letter-spacing: -.3px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      text-decoration: none;
+    }
+    .nav-tag {
+      font-size: .72rem; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--muted);
+      background: var(--highlight); padding: 3px 10px; border-radius: 99px;
+    }
+
+    /* ── Hero ────────────────────────────────────────── */
+    .hero {
+      padding: 72px 20px 56px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--primary);
+      background: var(--highlight); border: 1px solid #BFDBFE;
+      padding: 5px 14px; border-radius: 99px; margin-bottom: 20px;
+    }
+    .hero-badge svg { width: 12px; height: 12px; }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.9rem);
+      font-weight: 800; letter-spacing: -.04em; line-height: 1.15;
+      color: var(--text); margin-bottom: 14px;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--primary) 30%, var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.05rem; color: var(--muted);
+      max-width: 460px; margin: 0 auto 36px;
+    }
+
+    /* ── Search ──────────────────────────────────────── */
+    .search-wrap {
+      position: relative; max-width: 520px; margin: 0 auto;
+    }
+    .search-icon {
+      position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      color: var(--muted); pointer-events: none; width: 18px; height: 18px;
+    }
+    #searchInput {
+      width: 100%; padding: 14px 48px 14px 46px;
+      font-size: .97rem; color: var(--text);
+      background: var(--surface);
+      border: 1.5px solid var(--border); border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      outline: none; transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    #searchInput::placeholder { color: #94A3B8; }
+    #searchInput:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+    }
+    .clear-btn {
+      position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+      background: none; border: none; cursor: pointer; color: var(--muted);
+      display: none; padding: 4px; border-radius: 6px;
+      transition: color var(--transition);
+    }
+    .clear-btn:hover { color: var(--text); }
+    .clear-btn.visible { display: flex; align-items: center; }
+    .search-count {
+      margin-top: 10px; font-size: .8rem; color: var(--muted); text-align: center;
+      min-height: 20px;
+    }
+
+    /* ── FAQ Section ─────────────────────────────────── */
+    .faq-section { padding: 0 0 80px; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      opacity: 0; transform: translateY(12px);
+      animation: fadeUp .4s forwards;
+    }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .faq-item:nth-child(1) { animation-delay: .05s; }
+    .faq-item:nth-child(2) { animation-delay: .10s; }
+    .faq-item:nth-child(3) { animation-delay: .15s; }
+    .faq-item:nth-child(4) { animation-delay: .20s; }
+    .faq-item:nth-child(5) { animation-delay: .25s; }
+    .faq-item:nth-child(6) { animation-delay: .30s; }
+    .faq-item:nth-child(7) { animation-delay: .35s; }
+
+    .faq-trigger {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 22px 4px;
+      background: none; border: none; cursor: pointer; text-align: left;
+      border-radius: 0; transition: background var(--transition);
+    }
+    .faq-trigger:hover { background: var(--hover-bg); padding-left: 10px; padding-right: 10px; margin: 0 -10px; width: calc(100% + 20px); }
+    .faq-trigger:focus-visible {
+      outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 6px;
+    }
+
+    .faq-q {
+      font-size: 1rem; font-weight: 600; color: var(--text); flex: 1;
+      line-height: 1.45;
+    }
+    .faq-item.active .faq-q { color: var(--primary); }
+
+    .faq-icon {
+      flex-shrink: 0; width: 28px; height: 28px;
+      border-radius: 50%; background: var(--bg);
+      border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform var(--transition), background var(--transition), border-color var(--transition);
+    }
+    .faq-icon svg { width: 14px; height: 14px; color: var(--muted); transition: color var(--transition); }
+    .faq-item.active .faq-icon {
+      background: var(--primary); border-color: var(--primary); transform: rotate(45deg);
+    }
+    .faq-item.active .faq-icon svg { color: #fff; }
+
+    /* ── Accordion Body ──────────────────────────────── */
+    .faq-body {
+      display: grid; grid-template-rows: 0fr;
+      transition: grid-template-rows 300ms cubic-bezier(.4,0,.2,1);
+    }
+    .faq-body.open { grid-template-rows: 1fr; }
+    .faq-body-inner { overflow: hidden; }
+    .faq-content { padding: 0 0 28px; }
+
+    /* Video */
+    .faq-video-wrap {
+      position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+      border-radius: 10px; background: #0F172A; margin-bottom: 20px;
+      box-shadow: var(--shadow-md);
+    }
+    .faq-video-wrap video {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      border: none; border-radius: 10px;
+      background: #0F172A;
+    }
+    .faq-video-wrap video::-webkit-media-controls-panel {
+      background: rgba(0,0,0,0.7);
+    }
+
+    /* Text */
+    .faq-answer { font-size: .96rem; color: #334155; line-height: 1.72; margin-bottom: 22px; }
+    .faq-answer mark {
+      background: #FEF08A; color: var(--text);
+      border-radius: 3px; padding: 0 2px;
+    }
+
+    /* Actions */
+    .faq-actions {
+      display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+      padding-top: 16px; border-top: 1px solid var(--border);
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: .82rem; font-weight: 600; letter-spacing: .01em;
+      padding: 8px 16px; border-radius: 8px; border: none; cursor: pointer;
+      transition: all var(--transition); text-decoration: none; line-height: 1;
+    }
+    .btn svg { width: 14px; height: 14px; }
+    .btn-ghost {
+      background: var(--bg); color: var(--muted); border: 1.5px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--hover-bg); color: var(--primary); border-color: #BFDBFE; }
+    .btn-primary {
+      background: var(--primary); color: #fff;
+    }
+    .btn-primary:hover { background: #1D4ED8; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,.3); }
+
+    .nav-btns { margin-left: auto; display: flex; gap: 8px; }
+    @media(max-width: 520px) { .nav-btns { margin-left: 0; width: 100%; } .nav-btns .btn { flex: 1; justify-content: center; } }
+
+    /* ── No Results ──────────────────────────────────── */
+    #noResult {
+      display: none; text-align: center; padding: 60px 20px;
+    }
+    #noResult svg { width: 56px; height: 56px; color: #CBD5E1; margin-bottom: 16px; }
+    #noResult p { color: var(--muted); font-size: .97rem; }
+    #noResult strong { color: var(--text); }
+
+    /* ── Toast ───────────────────────────────────────── */
+    .toast {
+      position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(8px);
+      background: #1E293B; color: #fff;
+      font-size: .85rem; font-weight: 500; padding: 10px 20px; border-radius: 99px;
+      box-shadow: var(--shadow-md); pointer-events: none;
+      opacity: 0; transition: all .25s; white-space: nowrap; z-index: 200;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 20px; text-align: center;
+    }
+    .footer-logo {
+      font-size: 1rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      display: block; margin-bottom: 6px;
+    }
+    .footer-copy { font-size: .8rem; color: var(--muted); }
+    .footer-copy a { color: var(--primary); text-decoration: none; }
+
+    /* ── Reduced Motion ──────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Tutorialspointbd home">Tutorialspointbd</a>
+    <span class="nav-tag">Help Center</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" role="banner">
+  <div class="container">
+    <div class="hero-badge" aria-hidden="true">
+      <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="6" r="5" fill="currentColor" opacity=".25"/>
+        <circle cx="6" cy="6" r="2.5" fill="currentColor"/>
+      </svg>
+      Help & Support
+    </div>
+    <h1>Frequently Asked <span>Questions</span></h1>
+    <p>Find answers quickly through detailed explanations and video tutorials.</p>
+
+    <div class="search-wrap" role="search">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="search" id="searchInput" placeholder="Search questions…"
+        aria-label="Search frequently asked questions" autocomplete="off" spellcheck="false" />
+      <button class="clear-btn" id="clearBtn" aria-label="Clear search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6 6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-count" id="searchCount" role="status" aria-live="polite"></div>
+  </div>
+</header>
+
+<!-- FAQ -->
+<main class="faq-section" id="faq">
+  <div class="container">
+    <div class="faq-list" id="faqList" role="list"></div>
+    <div id="noResult" role="alert" aria-live="assertive">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        <path d="M8.5 8.5s1-1.5 2.5-1.5 2.5 1 2.5 2.5c0 2-2.5 2.5-2.5 4M11 17.5h.01"/>
+      </svg>
+      <p>No FAQ found for "<strong id="noResultTerm"></strong>".<br>Try a different keyword.</p>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <span class="footer-logo">Tutorialspointbd</span>
+  <p class="footer-copy">&copy; <span id="year"></span> Tutorialspointbd. All rights reserved. &nbsp;·&nbsp;
+    <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a>
+  </p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+<script>
+/* ── Data ─────────────────────────────────────────── */
+const faqs = [
+  {
+    q: "কিভাবে কোর্স শুরু করবে?",
+    a: "বিশেষ নোটঃ যদি মোবাইল দিয়ে লগইন করেন অবশ্যই ব্রাউজারকে Desktop মুডে নিয়ে নিবেন",
+    video: "How To start Course.mp4"  // ← লোকাল ভিডিও ফাইল
+  },
+  {
+    q: "Are the courses free to access?",
+    a: "Many of our courses are completely free with no registration required. Some advanced, project-based courses have a one-time enrollment fee that gives you lifetime access, downloadable resources, and a completion certificate.",
+    video: "assets/demo1.mp4"  // ← একই ভিডিও অথবা আলাদা
+  },
+  {
+    q: "Do I get a certificate after completing a course?",
+    a: "Yes! Upon completing any paid course, you receive a verified digital certificate of completion. You can download it as a PDF and share it directly to your LinkedIn profile, portfolio, or CV.",
+    video: "assets/demo1.mp4"
+  },
+  {
+    q: "What programming languages and technologies are covered?",
+    a: "Our library covers HTML, CSS, JavaScript (ES6+), Python, PHP, Laravel, React.js, Vue.js, Node.js, MySQL, MongoDB, Git, and more — structured from absolute beginner to advanced practitioner level.",
+    video: "assets/demo1.mp4"
+  },
+  {
+    q: "Can I learn at my own pace?",
+    a: "Absolutely. All video lessons are pre-recorded and available 24/7. There are no fixed deadlines, no live schedules, and no pressure — learn whenever and wherever works best for you.",
+    video: "assets/demo1.mp4"
+  },
+  {
+    q: "How do I reset my account password?",
+    a: "Navigate to the login page and click 'Forgot Password'. Enter your registered email address and we'll send you a secure reset link. The link expires after 30 minutes. If you don't see the email, please check your spam folder.",
+    video: "assets/demo1.mp4"
+  },
+  {
+    q: "Is there a mobile app available?",
+    a: "Our website is fully responsive and works seamlessly on smartphones and tablets. A dedicated Android app is currently in development and will be available on the Play Store soon. Stay tuned for the announcement!",
+    video: "assets/demo1.mp4"
+  }
+];
+
+/* ── State ────────────────────────────────────────── */
+let openIndex = -1;
+let filteredIndexes = faqs.map((_, i) => i);
+let query = "";
+
+/* ── Helpers ──────────────────────────────────────── */
+const $ = id => document.getElementById(id);
+
+function showToast(msg) {
+  const t = $('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._to);
+  t._to = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function highlight(text, term) {
+  if (!term) return text;
+  const esc = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(`(${esc})`, 'gi'), '<mark>$1</mark>');
+}
+
+/* ── Render ───────────────────────────────────────── */
+function render() {
+  const list = $('faqList');
+  const noRes = $('noResult');
+  const countEl = $('searchCount');
+  list.innerHTML = '';
+
+  if (filteredIndexes.length === 0) {
+    noRes.style.display = 'block';
+    $('noResultTerm').textContent = query;
+    countEl.textContent = '';
+    return;
+  }
+  noRes.style.display = 'none';
+  countEl.textContent = query
+    ? `${filteredIndexes.length} result${filteredIndexes.length !== 1 ? 's' : ''} found`
+    : '';
+
+  filteredIndexes.forEach((faqIdx, pos) => {
+    const faq = faqs[faqIdx];
+    const item = document.createElement('div');
+    item.className = 'faq-item';
+    item.setAttribute('role', 'listitem');
+
+    item.innerHTML = `
+      <button class="faq-trigger" aria-expanded="false" aria-controls="body-${faqIdx}" id="btn-${faqIdx}">
+        <span class="faq-q">${highlight(faq.q, query)}</span>
+        <span class="faq-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </span>
+      </button>
+      <div class="faq-body" id="body-${faqIdx}" role="region" aria-labelledby="btn-${faqIdx}">
+        <div class="faq-body-inner">
+          <div class="faq-content">
+            <div class="faq-video-wrap">
+              <video id="video-${faqIdx}" controls preload="metadata" style="width:100%;height:100%;border-radius:10px;background:#0F172A;">
+                <source src="${faq.video}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p class="faq-answer">${highlight(faq.a, query)}</p>
+            <div class="faq-actions">
+              <div class="nav-btns" style="margin-left:0;">
+                <button class="btn btn-ghost" onclick="navFaq(${pos}, -1)" ${pos === 0 ? 'disabled style="opacity:.4;cursor:default"' : ''} aria-label="Previous question">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                  Prev
+                </button>
+                <button class="btn btn-ghost" onclick="navFaq(${pos}, 1)" ${pos === filteredIndexes.length - 1 ? 'disabled style="opacity:.4;cursor:default"' : ''} aria-label="Next question">
+                  Next
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    item.querySelector('.faq-trigger').addEventListener('click', () => toggleFaq(faqIdx, item));
+    // animation delay
+    item.style.animationDelay = `${pos * 0.05}s`;
+    list.appendChild(item);
+  });
+}
+
+/* ── Toggle ───────────────────────────────────────── */
+function toggleFaq(idx, itemEl) {
+  const isOpen = openIndex === idx;
+
+  // Close current
+  if (openIndex !== -1) closeFaq(openIndex);
+
+  if (isOpen) return;
+
+  openIndex = idx;
+  itemEl.classList.add('active');
+  const body = $(`body-${idx}`);
+  const btn  = $(`btn-${idx}`);
+  body.classList.add('open');
+  btn.setAttribute('aria-expanded', 'true');
+
+  // Lazy-load video
+  const video = $(`video-${idx}`);
+  if (video) {
+    const source = video.querySelector('source');
+    if (source && (!source.src || source.src === window.location.href)) {
+      source.src = faqs[idx].video;
+      video.load(); // Reload video with new source
+    }
+  }
+
+  // Smooth scroll
+  setTimeout(() => {
+    itemEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 80);
+}
+
+function closeFaq(idx) {
+  const itemEl = $('faqList').querySelector(`#btn-${idx}`)?.closest('.faq-item');
+  if (!itemEl) return;
+  itemEl.classList.remove('active');
+  const body = $(`body-${idx}`);
+  const btn  = $(`btn-${idx}`);
+  body?.classList.remove('open');
+  btn?.setAttribute('aria-expanded', 'false');
+
+  // Stop video
+  const video = $(`video-${idx}`);
+  if (video) {
+    video.pause();
+    // Optional: Reset video to beginning
+    // video.currentTime = 0;
+  }
+  openIndex = -1;
+}
+
+/* ── Navigation ───────────────────────────────────── */
+function navFaq(pos, dir) {
+  const next = pos + dir;
+  if (next < 0 || next >= filteredIndexes.length) return;
+  const nextIdx  = filteredIndexes[next];
+  const list = $('faqList');
+  const items = list.querySelectorAll('.faq-item');
+  const item  = items[next];
+  if (item) toggleFaq(nextIdx, item);
+}
+
+/* ── Share / Copy ─────────────────────────────────── */
+function shareItem(idx) {
+  const url = `${location.origin}${location.pathname}#faq-${idx}`;
+  if (navigator.share) {
+    navigator.share({ title: faqs[idx].q, url });
+  } else {
+    navigator.clipboard.writeText(url).then(() => showToast('Link copied to clipboard!'));
+  }
+}
+
+function copyLink(idx) {
+  const url = `${location.origin}${location.pathname}#faq-${idx}`;
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = $(`copy-${idx}`);
+    btn.classList.add('copied');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+    showToast('Link copied!');
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16V4a2 2 0 0 1 2-2h12"/></svg> Copy Link`;
+    }, 2000);
+  });
+}
+
+/* ── Search ───────────────────────────────────────── */
+$('searchInput').addEventListener('input', e => {
+  query = e.target.value.trim().toLowerCase();
+  $('clearBtn').classList.toggle('visible', query.length > 0);
+
+  // Close open
+  if (openIndex !== -1) closeFaq(openIndex);
+
+  filteredIndexes = query
+    ? faqs.reduce((acc, f, i) => {
+        if (f.q.toLowerCase().includes(query) || f.a.toLowerCase().includes(query)) acc.push(i);
+        return acc;
+      }, [])
+    : faqs.map((_, i) => i);
+
+  render();
+});
+
+$('clearBtn').addEventListener('click', () => {
+  $('searchInput').value = '';
+  query = '';
+  $('clearBtn').classList.remove('visible');
+  filteredIndexes = faqs.map((_, i) => i);
+  $('searchCount').textContent = '';
+  if (openIndex !== -1) closeFaq(openIndex);
+  render();
+  $('searchInput').focus();
+});
+
+/* ── Keyboard navigation ──────────────────────────── */
+$('faqList').addEventListener('keydown', e => {
+  if (!['ArrowDown', 'ArrowUp'].includes(e.key)) return;
+  e.preventDefault();
+  const btns = [...$('faqList').querySelectorAll('.faq-trigger')];
+  const idx  = btns.indexOf(document.activeElement);
+  if (idx === -1) return;
+  const next = e.key === 'ArrowDown' ? idx + 1 : idx - 1;
+  btns[next]?.focus();
+});
+
+/* ── Init ─────────────────────────────────────────── */
+$('year').textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
